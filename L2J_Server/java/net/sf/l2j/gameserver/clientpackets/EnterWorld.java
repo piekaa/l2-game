@@ -254,21 +254,6 @@ public class EnterWorld extends L2GameClientPacket
 		
 		sendPacket(sm);
 		
-		if (Config.SERVER_VERSION != null)
-		{
-			sm = new SystemMessage(SystemMessageId.S1_S2);
-			sm.addString(getText("TDJKIFNlcnZlciBWZXJzaW9uOg==") + "      " + Config.SERVER_VERSION);
-			sendPacket(sm);
-		}
-		
-		if (Config.DATAPACK_VERSION != null)
-		{
-			sm = new SystemMessage(SystemMessageId.S1_S2);
-			sm.addString(getText("TDJKIERhdGFwYWNrIFZlcnNpb246") + "  " + Config.DATAPACK_VERSION);
-			sendPacket(sm);
-		}
-		sm = null;
-		
 		sm = new SystemMessage(SystemMessageId.S1_S2);
 		sm.addString(getText("Q29weXJpZ2h0IDIwMDQtMjAwNw=="));
 		sendPacket(sm);

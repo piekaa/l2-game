@@ -47,7 +47,7 @@
 		<mkdir dir="${build.dist.login}" />
 		<mkdir dir="${build.dist.game}" />
 	</target>
-	<target name="compile" depends="version" description="Compile the source.">
+	<target name="compile" depends="init" description="Compile the source.">
 		<javac destdir="${build.classes}" optimize="on" debug="on" source="1.8" target="1.8" nowarn="off" includeantruntime="false" deprecation="yes">
 			<src path="${src}" />
 			<classpath refid="classpath" />
@@ -72,11 +72,6 @@
 				<include name="l2jserver.jar" />
 			</fileset>
 		</copy>
-	</target>
-	<target name="compile.gcj" depends="jar" description="Build machine executable binary">
-		<exec dir="." executable="gcj" failifexecutionfails="false" os="linux:Linux:freebsd:FreeBSD">
-			<arg line="-O3 ${build.dist}/l2jserver.jar  -o ${build.dist}/l2jserver --main=net.sf.l2j.Server" />
-		</exec>
 	</target>
 	<target name="dist" depends="jar">
 		<copy todir="${build.dist.login}">
@@ -180,30 +175,7 @@
 				<include name="*.pn" />
 			</fileset>
 		</copy>
-		<zip destfile="${build}/l2j-server.zip" basedir="${build.dist}" />
-	</target>
-	<target name="version" depends="init" description="Create l2j-version.properties file">
-		<tstamp>
-			<format property="build.tstamp" pattern="yyyyMMdd_HHmm" />
-		</tstamp>
-		<exec dir="." executable="svnversion" outputproperty="l2j.revision" failifexecutionfails="false">
-			<arg line="-n ." />
-		</exec>
-		<concat destfile="${build.dist.game}/config/l2j-version.properties">
-			version=${l2j.revision}
-			builddate=${build.tstamp}
-			detailed info:
-		</concat>
-		<concat destfile="${build.dist.game}/config/l2j-version.properties" append="true">
-			<filelist dir="${src}/../.svn/" files="entries" />
-			<filterchain>
-				<prefixlines prefix="          " />
-				<headfilter lines="8" skip="4" />
-				<tokenfilter>
-					<ignoreblank />
-				</tokenfilter>
-			</filterchain>
-		</concat>
+		<zip destfile="${build}/L2J_Server.zip" basedir="${build.dist}" />
 	</target>
 	<target name="clean" description="Remove the output directories">
 		<delete dir="${build}" />

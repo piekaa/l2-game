@@ -288,16 +288,8 @@ public class GameServer
 	public GameServer() throws Exception
 	{
 		gameServer = this;
-		_log.finest("used mem:" + getUsedMemoryMB() + "MB");
+		_log.finest("Used memory:" + getUsedMemoryMB() + "MB");
 		
-		if (Config.SERVER_VERSION != null)
-		{
-			_log.info("L2J Server Version:    " + Config.SERVER_VERSION);
-		}
-		if (Config.DATAPACK_VERSION != null)
-		{
-			_log.info("L2J Datapack Version:  " + Config.DATAPACK_VERSION);
-		}
 		_idFactory = IdFactory.getInstance();
 		if (!_idFactory.isInitialized())
 		{

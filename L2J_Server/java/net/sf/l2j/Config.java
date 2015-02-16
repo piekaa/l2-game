@@ -681,10 +681,6 @@ public final class Config
 	public static final String GM_ACCESS_FILE = "./config/GMAccess.properties";
 	/** Properties file for telnet configuration */
 	public static final String TELNET_FILE = "./config/telnet.properties";
-	/** Properties file for l2j server version configurations */
-	public static final String SERVER_VERSION_FILE = "./config/l2j-version.properties";
-	/** Properties file for l2j datapack version configurations */
-	public static final String DATAPACK_VERSION_FILE = "./config/l2jdp-version.properties";
 	/** Properties file for siege configuration */
 	public static final String SIEGE_CONFIGURATION_FILE = "./config/siege.properties";
 	/** XML file for banned IP */
@@ -736,16 +732,6 @@ public final class Config
 	public static boolean ALLOW_CLASS_MASTERS;
 	/** Time between 2 updates of IP */
 	public static int IP_UPDATE_TIME;
-	
-	// Server version
-	/** Server version */
-	public static String SERVER_VERSION;
-	/** Date of server build */
-	public static String SERVER_BUILD_DATE;
-	
-	// Datapack version
-	/** Datapack version */
-	public static String DATAPACK_VERSION;
 	
 	/** Zone Setting */
 	public static int ZONE_TOWN;
@@ -1361,44 +1347,6 @@ public final class Config
 			{
 				e.printStackTrace();
 				throw new Error("Failed to Load " + OPTIONS_FILE + " File.");
-			}
-			
-			/*
-			 * Load L2J Server Version Properties file (if exists)
-			 */
-			try
-			{
-				Properties serverVersion = new Properties();
-				InputStream is = new FileInputStream(new File(SERVER_VERSION_FILE));
-				serverVersion.load(is);
-				is.close();
-				
-				SERVER_VERSION = serverVersion.getProperty("version", "Unsupported Custom Version.");
-				SERVER_BUILD_DATE = serverVersion.getProperty("builddate", "Undefined Date.");
-			}
-			catch (Exception e)
-			{
-				// Ignore Properties file if it doesnt exist
-				SERVER_VERSION = "Unsupported Custom Version.";
-				SERVER_BUILD_DATE = "Undefined Date.";
-			}
-			
-			/*
-			 * Load L2J Datapack Version Properties file (if exists)
-			 */
-			try
-			{
-				Properties serverVersion = new Properties();
-				InputStream is = new FileInputStream(new File(DATAPACK_VERSION_FILE));
-				serverVersion.load(is);
-				is.close();
-				
-				DATAPACK_VERSION = serverVersion.getProperty("version", "Unsupported Custom Version.");
-			}
-			catch (Exception e)
-			{
-				// Ignore Properties file if it doesnt exist
-				DATAPACK_VERSION = "Unsupported Custom Version.";
 			}
 			
 			// telnet
