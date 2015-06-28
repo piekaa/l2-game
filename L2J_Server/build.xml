@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="L2J_Server" default="dist" basedir=".">
+<project name="L2J_Server" default="build" basedir=".">
 	<description>
 		This script will build the L2J Server.
 
@@ -73,7 +73,7 @@
 			</fileset>
 		</copy>
 	</target>
-	<target name="dist" depends="jar">
+	<target name="build" depends="jar">
 		<copy todir="${build.dist.login}">
 			<fileset dir="${src}">
 				<include name="log.cfg" />
