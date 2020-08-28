@@ -34,8 +34,6 @@ import net.sf.l2j.gameserver.model.L2Character;
 import net.sf.l2j.gameserver.serverpackets.AutoAttackStop;
 
 /**
- * This class ...
- * @version $Revision: $ $Date: $
  * @author Luca Baldi
  */
 public class AttackStanceTaskManager

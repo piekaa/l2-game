@@ -60,10 +60,6 @@ public class MoveToLocationInVehicle extends L2GameServerPacket
 		 */
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -78,14 +74,9 @@ public class MoveToLocationInVehicle extends L2GameServerPacket
 		writeD(_origin.z);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return "[S] 71 MoveToLocationInVehicle";
 	}
-	
 }

@@ -37,10 +37,6 @@ public class ExFishingEnd extends L2GameServerPacket
 		_activeChar = character;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -51,14 +47,9 @@ public class ExFishingEnd extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__FE_14_EXFISHINGEND;
 	}
-	
 }

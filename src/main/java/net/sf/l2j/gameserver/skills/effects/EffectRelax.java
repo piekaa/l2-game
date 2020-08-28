@@ -38,7 +38,6 @@ class EffectRelax extends L2Effect
 		return EffectType.RELAXING;
 	}
 	
-	/** Notify started */
 	@Override
 	public void onStart()
 	{
@@ -55,10 +54,6 @@ class EffectRelax extends L2Effect
 		super.onStart();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.model.L2Effect#onExit()
-	 */
 	@Override
 	public void onExit()
 	{

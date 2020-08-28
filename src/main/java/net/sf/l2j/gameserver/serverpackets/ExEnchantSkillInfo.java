@@ -61,10 +61,6 @@ public class ExEnchantSkillInfo extends L2GameServerPacket
 		_reqs.add(new Req(type, id, count, unk));
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -89,10 +85,6 @@ public class ExEnchantSkillInfo extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

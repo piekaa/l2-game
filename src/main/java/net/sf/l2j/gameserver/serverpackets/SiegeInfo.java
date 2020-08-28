@@ -97,14 +97,9 @@ public class SiegeInfo extends L2GameServerPacket
 		writeD(0x00); // number of choices?
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__C9_SIEGEINFO;
 	}
-	
 }

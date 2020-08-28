@@ -48,10 +48,6 @@ public class SetupGauge extends L2GameServerPacket
 		writeD(_time); // c2
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

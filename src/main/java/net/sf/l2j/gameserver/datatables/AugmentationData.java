@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.datatables;
 
@@ -45,7 +46,6 @@ public class AugmentationData
 {
 	private static final Logger _log = Logger.getLogger(AugmentationData.class.getName());
 	
-	// =========================================================
 	private static AugmentationData _instance;
 	
 	public static final AugmentationData getInstance()
@@ -57,15 +57,10 @@ public class AugmentationData
 		return _instance;
 	}
 	
-	// =========================================================
-	// Data Field
-	
-	// chances
 	// private static final int CHANCE_STAT = 88;
 	private static final int CHANCE_SKILL = 11;
 	private static final int CHANCE_BASESTAT = 1;
 	
-	// stats
 	private static final int STAT_START = 1;
 	private static final int STAT_END = 14560;
 	private static final int STAT_BLOCKSIZE = 3640;
@@ -73,7 +68,6 @@ public class AugmentationData
 	private static final int STAT_SUBBLOCKSIZE = 91;
 	// private static final int STAT_NUMBEROF_SUBBLOCKS = 40;
 	
-	// basestats
 	private static final int BASESTAT_STR = 16341;
 	private static final int BASESTAT_CON = 16342;
 	private static final int BASESTAT_INT = 16343;
@@ -84,8 +78,6 @@ public class AugmentationData
 	private final FastList<augmentationSkill> _passiveSkills;
 	private final FastList<augmentationSkill> _chanceSkills;
 	
-	// =========================================================
-	// Constructor
 	public AugmentationData()
 	{
 		_log.info("Initializing AugmentationData.");
@@ -106,9 +98,6 @@ public class AugmentationData
 		_log.info("AugmentationData: Loaded: " + (_augmentationStats[0].size() * 4) + " augmentation stats.");
 		_log.info("AugmentationData: Loaded: " + _activeSkills.size() + " active, " + _passiveSkills.size() + " passive and " + _chanceSkills.size() + " chance skills");
 	}
-	
-	// =========================================================
-	// Nested Class
 	
 	public class augmentationSkill
 	{
@@ -188,9 +177,6 @@ public class AugmentationData
 			return _stat;
 		}
 	}
-	
-	// =========================================================
-	// Method - Private
 	
 	@SuppressWarnings("unchecked")
 	private final void load()
@@ -348,9 +334,6 @@ public class AugmentationData
 			}
 		}
 	}
-	
-	// =========================================================
-	// Properties - Public
 	
 	/**
 	 * Generate a new random augmentation

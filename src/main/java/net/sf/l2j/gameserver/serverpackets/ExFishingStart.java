@@ -39,10 +39,6 @@ public class ExFishingStart extends L2GameServerPacket
 		_z = z;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -50,23 +46,18 @@ public class ExFishingStart extends L2GameServerPacket
 		writeH(0x13);
 		writeD(_activeChar.getObjectId());
 		writeD(_fishType); // fish type
-		writeD(_x); // x poisson
-		writeD(_y); // y poisson
-		writeD(_z); // z poisson
+		writeD(_x); // x position
+		writeD(_y); // y position
+		writeD(_z); // z position
 		writeC(0x00); // night lure
 		writeC(0x00); // ??
 		writeC(((_fishType >= 7) && (_fishType <= 9)) ? 0x01 : 0x00); // 0 = day lure 1 = night lure
 		writeC(0x00);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__FE_13_EXFISHINGSTART;
 	}
-	
 }

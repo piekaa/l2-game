@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model.entity;
 
@@ -55,7 +55,6 @@ import net.sf.l2j.gameserver.templates.L2NpcTemplate;
 
 public class Siege
 {
-	// ==========================================================================================
 	// Message to add/check
 	// id=17 msg=[Castle siege has begun.] c3_attr1=[SystemMsg_k.17]
 	// id=18 msg=[Castle siege is over.] c3_attr1=[SystemMsg_k.18]
@@ -101,8 +100,6 @@ public class Siege
 		Spectator
 	}
 	
-	// ===============================================================
-	// Schedule task
 	public class ScheduleEndSiegeTask implements Runnable
 	{
 		private final Castle _castleInst;
@@ -222,8 +219,6 @@ public class Siege
 		}
 	}
 	
-	// =========================================================
-	// Data Field
 	// Attacker and Defender
 	private final List<L2SiegeClan> _attackerClans = new FastList<>(); // L2SiegeClan
 	
@@ -242,8 +237,6 @@ public class Siege
 	private SiegeGuardManager _siegeGuardManager;
 	protected Calendar _siegeRegistrationEndDate;
 	
-	// =========================================================
-	// Constructor
 	public Siege(Castle[] castle)
 	{
 		_castle = castle;
@@ -252,8 +245,6 @@ public class Siege
 		startAutoTask();
 	}
 	
-	// =========================================================
-	// Siege phases
 	/**
 	 * When siege ends<BR>
 	 * <BR>
@@ -471,8 +462,6 @@ public class Siege
 		}
 	}
 	
-	// =========================================================
-	// Method - Public
 	/**
 	 * Announce to player.<BR>
 	 * <BR>
@@ -1003,8 +992,6 @@ public class Siege
 		}
 	}
 	
-	// =========================================================
-	// Method - Private
 	/**
 	 * Add clan as attacker<BR>
 	 * <BR>

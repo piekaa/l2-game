@@ -41,14 +41,9 @@ public class Revive extends L2GameServerPacket
 		writeD(_objectId);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__0C_REVIVE;
 	}
-	
 }

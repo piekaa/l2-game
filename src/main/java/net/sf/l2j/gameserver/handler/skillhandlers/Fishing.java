@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.handler.skillhandlers;
 
@@ -40,8 +40,6 @@ import net.sf.l2j.util.Rnd;
 
 public class Fishing implements ISkillHandler
 {
-	// private static Logger _log = Logger.getLogger(SiegeFlag.class.getName());
-	// protected SkillType[] _skillIds = {SkillType.FISHING};
 	private static final SkillType[] SKILL_IDS =
 	{
 		SkillType.FISHING
@@ -57,18 +55,14 @@ public class Fishing implements ISkillHandler
 		
 		L2PcInstance player = (L2PcInstance) activeChar;
 		
-		/*
-		 * If fishing is disabled, there isn't much point in doing anything else, unless you are GM. so this got moved up here, before anything else.
-		 */
+		// If fishing is disabled, there isn't much point in doing anything else, unless you are GM. so this got moved up here, before anything else.
 		if (!Config.ALLOWFISHING && !player.isGM())
 		{
 			player.sendMessage("Not Working Yet");
 			return;
 		}
 		
-		/*
-		 * If fishing is enabled, here is the code that was striped from startFishing() in L2PcInstance. Decide now where will the hook be cast...
-		 */
+		// If fishing is enabled, here is the code that was striped from startFishing() in L2PcInstance. Decide now where will the hook be cast...
 		int rnd = Rnd.get(200) + 200;
 		double angle = Util.convertHeadingToDegree(player.getHeading());
 		// this.sendMessage("Angel: "+angle+" Heading: "+getHeading());
@@ -81,9 +75,7 @@ public class Fishing implements ISkillHandler
 		int y = player.getY() + y1;
 		int z = player.getZ() - 30;
 		
-		/*
-		 * ...and if the spot is in a fishing zone. If it is, it will then position the hook on the water surface. If not, you have to be GM to proceed past here... in that case, the hook will be positioned using the old Z lookup method.
-		 */
+		// ...and if the spot is in a fishing zone. If it is, it will then position the hook on the water surface. If not, you have to be GM to proceed past here... in that case, the hook will be positioned using the old Z lookup method.
 		L2FishingZone aimingTo = FishingZoneManager.getInstance().isInsideFishingZone(x, y, z);
 		if (aimingTo != null)
 		{
@@ -124,9 +116,8 @@ public class Fishing implements ISkillHandler
 			}
 		}
 		
-		/*
-		 * Of course since you can define fishing water volumes of any height, the function needs to be changed to cope with that. Still, this is assuming that fishing zones water surfaces, are always above "sea level".
-		 */
+		// Of course since you can define fishing water volumes of any height, the function needs to be changed to cope with that.
+		// Still, this is assuming that fishing zones water surfaces, are always above "sea level".
 		if ((player.getZ() <= -3800) || (player.getZ() < (z - 32)))
 		{
 			// You can't fish in water
@@ -185,5 +176,4 @@ public class Fishing implements ISkillHandler
 	{
 		return SKILL_IDS;
 	}
-	
 }

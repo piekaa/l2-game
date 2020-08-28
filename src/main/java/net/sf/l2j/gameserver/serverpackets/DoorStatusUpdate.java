@@ -47,14 +47,9 @@ public class DoorStatusUpdate extends L2GameServerPacket
 		writeD((int) _door.getCurrentHp());
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__61_DOORSTATUSUPDATE;
 	}
-	
 }

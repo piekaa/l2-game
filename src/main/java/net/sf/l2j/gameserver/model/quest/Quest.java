@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model.quest;
 
@@ -430,7 +430,7 @@ public abstract class Quest
 	
 	public String onAdvEvent(String event, L2NpcInstance npc, L2PcInstance player)
 	{
-		// if not overriden by a subclass, then default to the returned value of the simpler (and older) onEvent override
+		// if not overridden by a subclass, then default to the returned value of the simpler (and older) onEvent override
 		// if the player has a state, use it as parameter in the next call, else return null
 		QuestState qs = player.getQuestState(getName());
 		if (qs != null)
@@ -940,7 +940,7 @@ public abstract class Quest
 	 * Create a record in database for quest.<BR>
 	 * <BR>
 	 * <U><I>Actions :</I></U><BR>
-	 * Use fucntion createQuestVarInDb() with following parameters :<BR>
+	 * Use function createQuestVarInDb() with following parameters :<BR>
 	 * <LI>QuestState : parameter sq that puts in fields of database :
 	 * <UL type="square">
 	 * <LI>char_id : ID of the player</LI>
@@ -1250,10 +1250,6 @@ public abstract class Quest
 		return content;
 	}
 	
-	// =========================================================
-	// QUEST SPAWNS
-	// =========================================================
-	
 	public class DeSpawnScheduleTimerTask implements Runnable
 	{
 		L2NpcInstance _npc = null;
@@ -1270,7 +1266,6 @@ public abstract class Quest
 		}
 	}
 	
-	// Method - Public
 	/**
 	 * Add a temporary (quest) spawn Return instance of newly spawned npc
 	 * @param npcId

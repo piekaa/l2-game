@@ -68,10 +68,6 @@ public class Ride extends L2GameServerPacket
 		writeD(_rideClassID);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

@@ -35,20 +35,12 @@ public class TaskRecom extends Task
 	private static final Logger _log = Logger.getLogger(TaskRecom.class.getName());
 	private static final String NAME = "sp_recommendations";
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.taskmanager.Task#getName()
-	 */
 	@Override
 	public String getName()
 	{
 		return NAME;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.taskmanager.Task#onTimeElapsed(net.sf.l2j.gameserver.taskmanager.TaskManager.ExecutedTask)
-	 */
 	@Override
 	public void onTimeElapsed(ExecutedTask task)
 	{
@@ -66,5 +58,4 @@ public class TaskRecom extends Task
 		super.initializate();
 		TaskManager.addUniqueTask(NAME, TaskTypes.TYPE_GLOBAL_TASK, "1", "13:00:00", "");
 	}
-	
 }

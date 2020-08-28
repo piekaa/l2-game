@@ -23,7 +23,7 @@ import net.sf.l2j.gameserver.model.L2ManufactureList;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 /**
- * This class ... dddd d(ddd)
+ * dddd d(ddd)
  * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
 public class RecipeShopSellList extends L2GameServerPacket
@@ -66,14 +66,9 @@ public class RecipeShopSellList extends L2GameServerPacket
 		}
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__D9_RecipeShopSellList;
 	}
-	
 }

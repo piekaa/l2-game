@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.network;
 
@@ -21,10 +22,10 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.logging.Logger;
 
-import com.l2jserver.mmocore.IClientFactory;
-import com.l2jserver.mmocore.IMMOExecutor;
-import com.l2jserver.mmocore.IPacketHandler;
+import com.l2jserver.mmocore.ClientFactory;
 import com.l2jserver.mmocore.MMOConnection;
+import com.l2jserver.mmocore.MMOExecutor;
+import com.l2jserver.mmocore.PacketHandler;
 import com.l2jserver.mmocore.ReceivablePacket;
 
 import net.sf.l2j.Config;
@@ -36,12 +37,13 @@ import net.sf.l2j.util.Util;
 /**
  * Stateful Packet Handler<BR>
  * The Stateful approach prevents the server from handling inconsistent packets, examples:<BR>
- * <li>Clients sends a MoveToLocation packet without having a character attached. (Potential errors handling the packet).</li> <li>Clients sends a RequestAuthLogin being already authed. (Potential exploit).</li> <BR>
+ * <li>Clients sends a MoveToLocation packet without having a character attached. (Potential errors handling the packet).</li>
+ * <li>Clients sends a RequestAuthLogin being already authed. (Potential exploit).</li> <BR>
  * <BR>
  * Note: If for a given exception a packet needs to be handled on more then one state, then it should be added to all these states.
  * @author KenM
  */
-public final class L2GamePacketHandler implements IPacketHandler<L2GameClient>, IClientFactory<L2GameClient>, IMMOExecutor<L2GameClient>
+public final class L2GamePacketHandler implements PacketHandler<L2GameClient>, ClientFactory<L2GameClient>, MMOExecutor<L2GameClient>
 {
 	private static final Logger _log = Logger.getLogger(L2GamePacketHandler.class.getName());
 	

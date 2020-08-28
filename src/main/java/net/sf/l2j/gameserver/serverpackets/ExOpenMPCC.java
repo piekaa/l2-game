@@ -18,17 +18,13 @@
 package net.sf.l2j.gameserver.serverpackets;
 
 /**
- * @author chris_00 opens the CommandChannel Information window
+ * Opens the CommandChannel Information window.
+ * @author chris_00
  */
 public class ExOpenMPCC extends L2GameServerPacket
 {
-	
 	private static final String _S__FE_25_EXOPENMPCC = "[S] FE:25 ExOpenMPCC";
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -37,14 +33,9 @@ public class ExOpenMPCC extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__FE_25_EXOPENMPCC;
 	}
-	
 }

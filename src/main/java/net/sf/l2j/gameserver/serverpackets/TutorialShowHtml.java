@@ -28,10 +28,6 @@ public class TutorialShowHtml extends L2GameServerPacket
 		_html = html;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -39,14 +35,9 @@ public class TutorialShowHtml extends L2GameServerPacket
 		writeS(_html);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__A0_TUTORIALSHOWHTML;
 	}
-	
 }

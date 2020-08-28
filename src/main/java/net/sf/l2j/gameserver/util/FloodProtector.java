@@ -42,11 +42,7 @@ public class FloodProtector
 		return _instance;
 	}
 	
-	// =========================================================
-	// Data Field
 	private final FastMap<Integer, Integer[]> _floodClient;
-	
-	// =========================================================
 	
 	// reuse delays for protected actions (in game ticks 1 tick = 100ms)
 	private static final int[] REUSEDELAY = new int[]
@@ -65,8 +61,6 @@ public class FloodProtector
 	public static final int PROTECTED_ITEMPETSUMMON = 3;
 	public static final int PROTECTED_HEROVOICE = 4;
 	
-	// =========================================================
-	// Constructor
 	private FloodProtector()
 	{
 		_log.info("Initializing FloodProtector");

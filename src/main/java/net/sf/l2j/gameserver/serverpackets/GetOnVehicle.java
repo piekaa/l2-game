@@ -51,10 +51,6 @@ public class GetOnVehicle extends L2GameServerPacket
 		_activeChar.setBoat(_boat);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -67,15 +63,10 @@ public class GetOnVehicle extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		// TODO Auto-generated method stub
 		return "[S] 5C GetOnVehicle";
 	}
-	
 }

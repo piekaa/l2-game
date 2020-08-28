@@ -34,9 +34,6 @@ public class TitleUpdate extends L2GameServerPacket
 		_title = cha.getTitle();
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -45,13 +42,9 @@ public class TitleUpdate extends L2GameServerPacket
 		writeS(_title);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__CC_TITLE_UPDATE;
 	}
-	
 }

@@ -21,7 +21,6 @@ package net.sf.l2j.gameserver.serverpackets;
 import net.sf.l2j.gameserver.model.TradeList;
 
 /**
- * This class ...
  * @author Yme
  * @version $Revision: 1.2.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
@@ -55,14 +54,9 @@ public class TradeOwnAdd extends L2GameServerPacket
 		writeH(0x00);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__30_TRADEOWNADD;
 	}
-	
 }

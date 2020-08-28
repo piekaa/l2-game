@@ -22,7 +22,6 @@ import net.sf.l2j.gameserver.model.L2Summon;
 import net.sf.l2j.gameserver.model.actor.instance.L2PetInstance;
 
 /**
- * This class ...
  * @version $Revision: 1.6.2.5.2.12 $ $Date: 2005/03/31 09:19:16 $
  */
 public class PetInfo extends L2GameServerPacket

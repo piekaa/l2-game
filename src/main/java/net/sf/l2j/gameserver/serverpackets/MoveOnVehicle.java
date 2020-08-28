@@ -61,10 +61,6 @@ public class MoveOnVehicle extends L2GameServerPacket
 		writeD(_activeChar.getZ());
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

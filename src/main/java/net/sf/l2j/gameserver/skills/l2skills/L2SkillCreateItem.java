@@ -46,9 +46,6 @@ public class L2SkillCreateItem extends L2Skill
 		_randomCount = set.getInteger("random_count", 1);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.model.L2Skill#useSkill(net.sf.l2j.gameserver.model.L2Character, net.sf.l2j.gameserver.model.L2Object[])
-	 */
 	@Override
 	public void useSkill(L2Character activeChar, L2Object[] targets)
 	{
@@ -72,11 +69,6 @@ public class L2SkillCreateItem extends L2Skill
 		}
 	}
 	
-	/**
-	 * @param activeChar
-	 * @param itemId
-	 * @param count
-	 */
 	public void giveItems(L2PcInstance activeChar, int itemId, int count)
 	{
 		L2ItemInstance item = new L2ItemInstance(IdFactory.getInstance().getNextId(), itemId);

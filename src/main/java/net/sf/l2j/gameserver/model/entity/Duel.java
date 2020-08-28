@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model.entity;
 
@@ -48,8 +48,6 @@ public class Duel
 	public static final int DUELSTATE_WINNER = 3;
 	public static final int DUELSTATE_INTERRUPTED = 4;
 	
-	// =========================================================
-	// Data Field
 	private final int _duelId;
 	private L2PcInstance _playerA;
 	private L2PcInstance _playerB;
@@ -72,8 +70,6 @@ public class Duel
 		Timeout
 	}
 	
-	// =========================================================
-	// Constructor
 	public Duel(L2PcInstance playerA, L2PcInstance playerB, int partyDuel, int duelId)
 	{
 		_duelId = duelId;
@@ -97,9 +93,9 @@ public class Duel
 		
 		if (_partyDuel)
 		{
-			// increase countdown so that start task can teleport players
+			// increase count down so that start task can teleport players
 			_countdown++;
-			// inform players that they will be portet shortly
+			// inform players that they will be ported shortly
 			SystemMessage sm = new SystemMessage(SystemMessageId.IN_A_MOMENT_YOU_WILL_BE_TRANSPORTED_TO_THE_SITE_WHERE_THE_DUEL_WILL_TAKE_PLACE);
 			broadcastToTeam1(sm);
 			broadcastToTeam2(sm);
@@ -107,9 +103,6 @@ public class Duel
 		// Schedule duel start
 		ThreadPoolManager.getInstance().scheduleGeneral(new ScheduleStartDuelTask(this), 3000);
 	}
-	
-	// ===============================================================
-	// Nested Class
 	
 	public class PlayerCondition
 	{
@@ -191,8 +184,6 @@ public class Duel
 		}
 	}
 	
-	// ===============================================================
-	// Schedule task
 	public class ScheduleDuelTask implements Runnable
 	{
 		private final Duel _duel;
@@ -256,7 +247,7 @@ public class Duel
 					// currently only teleports to the same stadium
 					_duel.teleportPlayers(-102495, -209023, -3326);
 					
-					// give players 20 seconds to complete teleport and get ready (its ought to be 30 on offical..)
+					// give players 20 seconds to complete teleport and get ready (its ought to be 30 on official..)
 					ThreadPoolManager.getInstance().scheduleGeneral(this, 20000);
 				}
 				else if (count > 0) // duel not started yet - continue countdown
@@ -298,9 +289,6 @@ public class Duel
 		}
 	}
 	
-	// ========================================================
-	// Method - Private
-	
 	/**
 	 * Stops all players from attacking. Used for duel timeout / interrupt.
 	 */
@@ -336,9 +324,6 @@ public class Duel
 			_playerB.sendPacket(af);
 		}
 	}
-	
-	// ========================================================
-	// Method - Public
 	
 	/**
 	 * Check if a player engaged in pvp combat (only for 1on1 duels)
@@ -531,7 +516,7 @@ public class Duel
 	}
 	
 	/**
-	 * Get the player that requestet the duel
+	 * Get the player that requested the duel
 	 * @return duel requester
 	 */
 	public L2PcInstance getPlayerA()
@@ -686,7 +671,7 @@ public class Duel
 	}
 	
 	/**
-	 * Playback the bow animation for all loosers
+	 * Playback the bow animation for all looser
 	 */
 	public void playKneelAnimation()
 	{

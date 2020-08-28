@@ -96,9 +96,6 @@ public class ExCaptureOrc extends L2GameServerPacket
 		};
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -107,9 +104,6 @@ public class ExCaptureOrc extends L2GameServerPacket
 		writeB(_test);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

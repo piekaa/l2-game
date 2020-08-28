@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model;
 
@@ -1194,7 +1194,6 @@ public abstract class L2Character extends L2Object
 		// o1 has a heading of -80 (280) degree from horizontal (facing north east)
 		// Degree of o2 in respect to 01 = -40 (320) degree
 		
-		// ===========================================================
 		// Make sure that char is facing selected target
 		angleTarget = Util.calculateAngleFrom(this, getTarget());
 		setHeading((int) ((angleTarget / 9.0) * 1610.0)); // = this.setHeading((int)((angleTarget / 360.0) * 64400.0));
@@ -2705,9 +2704,7 @@ public abstract class L2Character extends L2Object
 		}
 	}
 	
-	// =========================================================
 	// Abnormal Effect - NEED TO REMOVE ONCE L2CHARABNORMALEFFECT IS COMPLETE
-	// Data Field
 	/** Map 32 bits (0x0000) containing all abnormal effect in progress. */
 	private int _AbnormalEffects;
 	
@@ -3713,7 +3710,6 @@ public abstract class L2Character extends L2Object
 		}
 	}
 	
-	// Property - Public
 	/**
 	 * Return a map of 16 bits (0x0000) containing all abnormal effect in progress for this L2Character.<BR>
 	 * <BR>
@@ -3915,8 +3911,6 @@ public abstract class L2Character extends L2Object
 		return null;
 	}
 	
-	// =========================================================
-	// NEED TO ORGANIZE AND MOVE TO PROPER PLACE
 	/**
 	 * This class permit to the L2Character AI to obtain informations and uses L2Character method.
 	 */
@@ -7520,9 +7514,7 @@ public abstract class L2Character extends L2Object
 	 */
 	public abstract int getLevel();
 	
-	// =========================================================
 	// Stat - NEED TO REMOVE ONCE L2CHARSTAT IS COMPLETE
-	// Property - Public
 	/**
 	 * Calc stat.
 	 * @param stat the stat
@@ -7536,7 +7528,6 @@ public abstract class L2Character extends L2Object
 		return getStat().calcStat(stat, init, target, skill);
 	}
 	
-	// Property - Public
 	/**
 	 * Gets the accuracy.
 	 * @return the accuracy
@@ -7874,9 +7865,7 @@ public abstract class L2Character extends L2Object
 		return getStat().getWIT();
 	}
 	
-	// =========================================================
 	// Status - NEED TO REMOVE ONCE L2CHARTATUS IS COMPLETE
-	// Method - Public
 	/**
 	 * Adds the status listener.
 	 * @param object the object
@@ -7940,7 +7929,6 @@ public abstract class L2Character extends L2Object
 		getStatus().stopHpMpRegeneration();
 	}
 	
-	// Property - Public
 	/**
 	 * Gets the current cp.
 	 * @return the current cp

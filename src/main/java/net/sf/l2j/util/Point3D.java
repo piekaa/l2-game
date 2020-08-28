@@ -17,14 +17,10 @@ package net.sf.l2j.util;
 import java.io.Serializable;
 
 /**
- * This class ...
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
  */
 public class Point3D implements Serializable
 {
-	/**
-	 * Comment for <code>serialVersionUID</code>
-	 */
 	private static final long serialVersionUID = 4638345252031872576L;
 	
 	private volatile int _x, _y, _z;
@@ -43,9 +39,6 @@ public class Point3D implements Serializable
 		_z = 0;
 	}
 	
-	/**
-	 * @param worldPosition
-	 */
 	public Point3D(Point3D worldPosition)
 	{
 		synchronized (worldPosition)

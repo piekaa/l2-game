@@ -18,7 +18,8 @@
 package net.sf.l2j.gameserver.serverpackets;
 
 /**
- * @author devScarlet & mrTJO
+ * @author devScarlet
+ * @author mrTJO
  */
 public class ShowXMasSeal extends L2GameServerPacket
 {
@@ -38,13 +39,9 @@ public class ShowXMasSeal extends L2GameServerPacket
 		writeD(_item);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__F2_SHOWXMASSEAL;
 	}
-	
 }

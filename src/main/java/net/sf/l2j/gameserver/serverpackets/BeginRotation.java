@@ -43,10 +43,6 @@ public class BeginRotation extends L2GameServerPacket
 		writeD(_side);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

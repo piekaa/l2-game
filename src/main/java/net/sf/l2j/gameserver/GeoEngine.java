@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver;
 
@@ -72,37 +73,24 @@ public class GeoEngine extends GeoData
 		nInitGeodata();
 	}
 	
-	// Public Methods
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#getType(int, int)
-	 */
 	@Override
 	public short getType(int x, int y)
 	{
 		return nGetType((x - L2World.MAP_MIN_X) >> 4, (y - L2World.MAP_MIN_Y) >> 4);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#getHeight(int, int, int)
-	 */
 	@Override
 	public short getHeight(int x, int y, int z)
 	{
 		return nGetHeight((x - L2World.MAP_MIN_X) >> 4, (y - L2World.MAP_MIN_Y) >> 4, z);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#getSpawnHeight(int, int, int, int, int)
-	 */
 	@Override
 	public short getSpawnHeight(int x, int y, int zmin, int zmax, int spawnid)
 	{
 		return nGetSpawnHeight((x - L2World.MAP_MIN_X) >> 4, (y - L2World.MAP_MIN_Y) >> 4, zmin, zmax, spawnid);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#geoPosition(int, int)
-	 */
 	@Override
 	public String geoPosition(int x, int y)
 	{
@@ -111,9 +99,6 @@ public class GeoEngine extends GeoData
 		return "bx: " + getBlock(gx) + " by: " + getBlock(gy) + " cx: " + getCell(gx) + " cy: " + getCell(gy) + "  region offset: " + getRegionOffset(gx, gy);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#canSeeTarget(net.sf.l2j.gameserver.model.L2Object, net.sf.l2j.gameserver.model.L2Object)
-	 */
 	@Override
 	public boolean canSeeTarget(L2Object cha, L2Object target)
 	{
@@ -151,9 +136,6 @@ public class GeoEngine extends GeoData
 		return canSeeTarget(target.getX(), target.getY(), z2, cha.getX(), cha.getY(), z);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#canSeeTargetDebug(net.sf.l2j.gameserver.model.actor.instance.L2PcInstance, net.sf.l2j.gameserver.model.L2Object)
-	 */
 	@Override
 	public boolean canSeeTargetDebug(L2PcInstance gm, L2Object target)
 	{
@@ -173,18 +155,12 @@ public class GeoEngine extends GeoData
 		return canSeeDebug(gm, (target.getX() - L2World.MAP_MIN_X) >> 4, (target.getY() - L2World.MAP_MIN_Y) >> 4, z2, (gm.getX() - L2World.MAP_MIN_X) >> 4, (gm.getY() - L2World.MAP_MIN_Y) >> 4, z);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#getNSWE(int, int, int)
-	 */
 	@Override
 	public short getNSWE(int x, int y, int z)
 	{
 		return nGetNSWE((x - L2World.MAP_MIN_X) >> 4, (y - L2World.MAP_MIN_Y) >> 4, z);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#moveCheck(int, int, int, int, int, int)
-	 */
 	@Override
 	public Location moveCheck(int x, int y, int z, int tx, int ty, int tz)
 	{
@@ -198,9 +174,6 @@ public class GeoEngine extends GeoData
 		return moveCheck(startpoint, destiny, (x - L2World.MAP_MIN_X) >> 4, (y - L2World.MAP_MIN_Y) >> 4, z, (tx - L2World.MAP_MIN_X) >> 4, (ty - L2World.MAP_MIN_Y) >> 4, tz);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.GeoData#addGeoDataBug(net.sf.l2j.gameserver.model.actor.instance.L2PcInstance, java.lang.String)
-	 */
 	@Override
 	public void addGeoDataBug(L2PcInstance gm, String comment)
 	{
@@ -226,7 +199,6 @@ public class GeoEngine extends GeoData
 		}
 	}
 	
-	// Private Methods
 	private boolean canSeeTarget(int x, int y, int z, int tx, int ty, int tz)
 	{
 		return canSee((x - L2World.MAP_MIN_X) >> 4, (y - L2World.MAP_MIN_Y) >> 4, z, (tx - L2World.MAP_MIN_X) >> 4, (ty - L2World.MAP_MIN_Y) >> 4, tz);
@@ -480,9 +452,6 @@ public class GeoEngine extends GeoData
 		return true;
 	}
 	
-	/*
-	 * MoveCheck
-	 */
 	private static Location moveCheck(Location startpoint, Location destiny, int x, int y, double z, int tx, int ty, int tz)
 	{
 		int dx = (tx - x);
@@ -733,7 +702,6 @@ public class GeoEngine extends GeoData
 		return true;
 	}
 	
-	// Geodata Methods
 	/**
 	 * @param x
 	 * @param y
@@ -763,8 +731,6 @@ public class GeoEngine extends GeoData
 	{
 		return geo_pos % 8;
 	}
-	
-	// Geodata Functions
 	
 	/**
 	 * @param x

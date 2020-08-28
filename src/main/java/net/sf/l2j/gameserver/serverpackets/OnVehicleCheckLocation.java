@@ -44,10 +44,6 @@ public class OnVehicleCheckLocation extends L2GameServerPacket
 		_z = z;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -60,15 +56,10 @@ public class OnVehicleCheckLocation extends L2GameServerPacket
 		writeD(_boat.getPosition().getHeading());
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
 }

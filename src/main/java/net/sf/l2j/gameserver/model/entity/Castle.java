@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model.entity;
 
@@ -63,8 +63,7 @@ public class Castle
 	private static final String CASTLE_MANOR_DELETE_PROCURE_PERIOD = "DELETE FROM castle_manor_procure WHERE castle_id=? AND period=?;";
 	private static final String CASTLE_UPDATE_CROP = "UPDATE castle_manor_procure SET can_buy=? WHERE crop_id=? AND castle_id=? AND period=?";
 	private static final String CASTLE_UPDATE_SEED = "UPDATE castle_manor_production SET can_produce=? WHERE seed_id=? AND castle_id=? AND period=?";
-	// =========================================================
-	// Data Field
+
 	private int _castleId = 0;
 	private final List<L2DoorInstance> _doors = new FastList<>();
 	private final List<String> _doorDefault = new FastList<>();
@@ -82,8 +81,6 @@ public class Castle
 	private int _nbArtifact = 1;
 	private final Map<Integer, Integer> _engrave = new FastMap<>();
 	
-	// =========================================================
-	// Constructor
 	public Castle(int castleId)
 	{
 		_castleId = castleId;
@@ -94,9 +91,6 @@ public class Castle
 		load();
 		loadDoor();
 	}
-	
-	// =========================================================
-	// Method - Public
 	
 	public void Engrave(L2Clan clan, int objId)
 	{
@@ -127,7 +121,6 @@ public class Castle
 		}
 	}
 	
-	// This method add to the treasury
 	/**
 	 * Add amount to castle instance's treasury (warehouse).
 	 * @param amount
@@ -365,7 +358,6 @@ public class Castle
 		updateClansReputation();
 	}
 	
-	// This method updates the castle tax rate
 	public void setTaxPercent(L2PcInstance activeChar, int taxPercent)
 	{
 		int maxTax;
@@ -476,9 +468,6 @@ public class Castle
 		}
 	}
 	
-	// =========================================================
-	// Method - Private
-	// This method loads castle
 	private void load()
 	{
 		java.sql.Connection con = null;
@@ -555,7 +544,6 @@ public class Castle
 		}
 	}
 	
-	// This method loads castle door data from database
 	private void loadDoor()
 	{
 		java.sql.Connection con = null;
@@ -596,7 +584,6 @@ public class Castle
 		}
 	}
 	
-	// This method loads castle door upgrade data from database
 	private void loadDoorUpgrade()
 	{
 		java.sql.Connection con = null;
@@ -707,7 +694,6 @@ public class Castle
 			con = L2DatabaseFactory.getInstance().getConnection();
 			PreparedStatement statement;
 			
-			// ============================================================================
 			// NEED TO REMOVE HAS CASTLE FLAG FROM CLAN_DATA
 			// SHOULD BE CHECKED FROM CASTLE TABLE
 			statement = con.prepareStatement("UPDATE clan_data SET hasCastle=0 WHERE hasCastle=?");
@@ -720,9 +706,8 @@ public class Castle
 			statement.setInt(2, getOwnerId());
 			statement.execute();
 			statement.close();
-			// ============================================================================
 			
-			// Announce to clan memebers
+			// Announce to clan members
 			if (clan != null)
 			{
 				clan.setHasCastle(getCastleId()); // Set has castle flag for new owner
@@ -749,8 +734,6 @@ public class Castle
 		}
 	}
 	
-	// =========================================================
-	// Property
 	public final int getCastleId()
 	{
 		return _castleId;
@@ -923,7 +906,6 @@ public class Castle
 		return total;
 	}
 	
-	// save manor production data
 	public void saveSeedData()
 	{
 		java.sql.Connection con = null;
@@ -1001,7 +983,6 @@ public class Castle
 		}
 	}
 	
-	// save manor production data for specified period
 	public void saveSeedData(int period)
 	{
 		java.sql.Connection con = null;
@@ -1058,7 +1039,6 @@ public class Castle
 		}
 	}
 	
-	// save crop procure data
 	public void saveCropData()
 	{
 		java.sql.Connection con = null;
@@ -1132,7 +1112,6 @@ public class Castle
 		}
 	}
 	
-	// save crop procure data for specified period
 	public void saveCropData(int period)
 	{
 		java.sql.Connection con = null;

@@ -53,10 +53,6 @@ public class ExEnchantSkillList extends L2GameServerPacket
 		_skills = new FastList<>();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -74,14 +70,9 @@ public class ExEnchantSkillList extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__FE_17_EXENCHANTSKILLLIST;
 	}
-	
 }

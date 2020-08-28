@@ -141,30 +141,18 @@ public final class L2ObjectHashMap<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#size()
-	 */
 	@Override
 	public int size()
 	{
 		return _count;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#isEmpty()
-	 */
 	@Override
 	public boolean isEmpty()
 	{
 		return _count == 0;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#clear()
-	 */
 	@Override
 	@SuppressWarnings("unchecked")
 	public synchronized void clear()
@@ -201,10 +189,6 @@ public final class L2ObjectHashMap<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#put(T)
-	 */
 	@Override
 	public synchronized void put(T obj)
 	{
@@ -292,10 +276,6 @@ public final class L2ObjectHashMap<T extends L2Object> extends L2ObjectMap<T>
 		throw new IllegalStateException();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#remove(T)
-	 */
 	@Override
 	public synchronized void remove(T obj)
 	{
@@ -346,10 +326,6 @@ public final class L2ObjectHashMap<T extends L2Object> extends L2ObjectMap<T>
 		throw new IllegalStateException();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#get(int)
-	 */
 	@Override
 	public T get(int id)
 	{
@@ -392,10 +368,6 @@ public final class L2ObjectHashMap<T extends L2Object> extends L2ObjectMap<T>
 		return null;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#contains(T)
-	 */
 	@Override
 	public boolean contains(T obj)
 	{
@@ -460,10 +432,6 @@ public final class L2ObjectHashMap<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.util.L2ObjectMap#iterator()
-	 */
 	@Override
 	public Iterator<T> iterator()
 	{

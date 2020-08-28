@@ -31,10 +31,8 @@ import net.sf.l2j.gameserver.templates.L2NpcTemplate;
 import net.sf.l2j.util.Rnd;
 
 /**
- * This class ...
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
  */
-
 public class MinionList
 {
 	private static Logger _log = Logger.getLogger(L2MonsterInstance.class.getName());

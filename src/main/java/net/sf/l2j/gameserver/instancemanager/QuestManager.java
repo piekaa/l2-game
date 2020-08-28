@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.instancemanager;
 
@@ -29,7 +30,6 @@ public class QuestManager
 {
 	protected static final Logger _log = Logger.getLogger(QuestManager.class.getName());
 	
-	// =========================================================
 	private static QuestManager _instance;
 	
 	public static final QuestManager getInstance()
@@ -46,20 +46,12 @@ public class QuestManager
 		return _instance;
 	}
 	
-	// =========================================================
-	
-	// =========================================================
-	// Data Field
 	private Map<String, Quest> _quests = new FastMap<>();
 	
-	// =========================================================
-	// Constructor
 	public QuestManager()
 	{
 	}
 	
-	// =========================================================
-	// Method - Public
 	public final boolean reload(String questFolder)
 	{
 		Quest q = getQuest(questFolder);
@@ -76,7 +68,7 @@ public class QuestManager
 	 * Reloads a the quest given by questId.<BR>
 	 * <B>NOTICE: Will only work if the quest name is equal the quest folder name</B>
 	 * @param questId The id of the quest to be reloaded
-	 * @return true if reload was succesful, false otherwise
+	 * @return true if reload was successful, false otherwise
 	 */
 	public final boolean reload(int questId)
 	{
@@ -89,8 +81,6 @@ public class QuestManager
 		return QuestJython.reloadQuest(q.getPrefixPath() + q.getName());
 	}
 	
-	// =========================================================
-	// Method - Private
 	private final void load()
 	{
 		QuestJython.init();
@@ -105,8 +95,6 @@ public class QuestManager
 		}
 	}
 	
-	// =========================================================
-	// Property - Public
 	public final Quest getQuest(String name)
 	{
 		return getQuests().get(name);

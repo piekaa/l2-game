@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model.actor.position;
 
@@ -31,23 +32,17 @@ public class ObjectPosition
 {
 	private static final Logger _log = Logger.getLogger(ObjectPosition.class.getName());
 	
-	// =========================================================
-	// Data Field
 	private final L2Object _activeObject;
 	private int _heading = 0;
 	private Point3D _worldPosition;
 	private L2WorldRegion _worldRegion; // Object localization : Used for items/chars that are seen in the world
 	
-	// =========================================================
-	// Constructor
 	public ObjectPosition(L2Object activeObject)
 	{
 		_activeObject = activeObject;
 		setWorldRegion(L2World.getInstance().getRegion(getWorldPosition()));
 	}
 	
-	// =========================================================
-	// Method - Public
 	/**
 	 * Set the x,y,z position of the L2Object and if necessary modify its _worldRegion.<BR>
 	 * <BR>
@@ -161,11 +156,6 @@ public class ObjectPosition
 		}
 	}
 	
-	// =========================================================
-	// Method - Private
-	
-	// =========================================================
-	// Property - Public
 	public final L2Object getActiveObject()
 	{
 		return _activeObject;

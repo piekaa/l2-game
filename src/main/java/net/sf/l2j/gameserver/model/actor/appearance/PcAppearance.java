@@ -1,27 +1,25 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model.actor.appearance;
 
 public class PcAppearance
 {
-	// =========================================================
-	// Data Field
 	private byte _face;
 	private byte _hairColor;
 	private byte _hairStyle;
@@ -33,8 +31,6 @@ public class PcAppearance
 	/** The hexadecimal Color of players name (white is 0xFFFFFF) */
 	private int _titleColor = 0xFFFF77;
 	
-	// =========================================================
-	// Constructor
 	public PcAppearance(byte Face, byte HColor, byte HStyle, boolean Sex)
 	{
 		_face = Face;
@@ -43,22 +39,11 @@ public class PcAppearance
 		_sex = Sex;
 	}
 	
-	// =========================================================
-	// Method - Public
-	
-	// =========================================================
-	// Method - Private
-	
-	// =========================================================
-	// Property - Public
 	public final byte getFace()
 	{
 		return _face;
 	}
 	
-	/**
-	 * @param value
-	 */
 	public final void setFace(int value)
 	{
 		_face = (byte) value;
@@ -69,9 +54,6 @@ public class PcAppearance
 		return _hairColor;
 	}
 	
-	/**
-	 * @param value
-	 */
 	public final void setHairColor(int value)
 	{
 		_hairColor = (byte) value;
@@ -82,9 +64,6 @@ public class PcAppearance
 		return _hairStyle;
 	}
 	
-	/**
-	 * @param value
-	 */
 	public final void setHairStyle(int value)
 	{
 		_hairStyle = (byte) value;
@@ -95,9 +74,6 @@ public class PcAppearance
 		return _sex;
 	}
 	
-	/**
-	 * @param isfemale
-	 */
 	public final void setSex(boolean isfemale)
 	{
 		_sex = isfemale;

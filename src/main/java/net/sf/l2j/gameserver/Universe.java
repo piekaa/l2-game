@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver;
 
@@ -45,10 +46,6 @@ import net.sf.l2j.Config;
 
 public class Universe implements java.io.Serializable
 {
-	
-	/**
-	 * Comment for <code>serialVersionUID</code>
-	 */
 	private static final long serialVersionUID = -2040223695811104704L;
 	public static final int MIN_X = -127900;
 	public static final int MAX_X = 194327;
@@ -72,15 +69,11 @@ public class Universe implements java.io.Serializable
 	{
 		Universe u = new Universe();
 		u.load();
-		// u.removeDoubles();
 		u.implode(false);
 	}
 	
 	private class Position implements Comparable<Object>, java.io.Serializable
 	{
-		/**
-		 * Comment for <code>serialVersionUID</code>
-		 */
 		private static final long serialVersionUID = -8798746764450022287L;
 		protected int _x;
 		protected int _flag;
@@ -114,9 +107,6 @@ public class Universe implements java.io.Serializable
 	
 	private class Coord implements Comparable<Object>, java.io.Serializable
 	{
-		/**
-		 * Comment for <code>serialVersionUID</code>
-		 */
 		private static final long serialVersionUID = -558060332886829552L;
 		protected int _x;
 		protected int _y;
@@ -294,16 +284,11 @@ public class Universe implements java.io.Serializable
 			_ext = pExt;
 		}
 		
-		/*
-		 * (non-Javadoc)
-		 * @see java.io.FilenameFilter#accept(java.io.File, java.lang.String)
-		 */
 		@Override
 		public boolean accept(File arg0, String name)
 		{
 			return name.startsWith("universe") && name.endsWith("." + _ext);
 		}
-		
 	}
 	
 	public void load()
@@ -330,10 +315,6 @@ public class Universe implements java.io.Serializable
 		System.out.println("Total: " + total);
 	}
 	
-	/**
-	 * @throws FileNotFoundException
-	 * @throws IOException
-	 */
 	private void loadFinFiles() throws FileNotFoundException, IOException
 	{
 		FilenameFilter filter = new UniverseFilter("fin");
@@ -357,10 +338,6 @@ public class Universe implements java.io.Serializable
 		}
 	}
 	
-	/**
-	 * @throws FileNotFoundException
-	 * @throws IOException
-	 */
 	private void loadHexFiles() throws FileNotFoundException, IOException
 	{
 		FilenameFilter filter = new UniverseFilter("hex");
@@ -386,15 +363,7 @@ public class Universe implements java.io.Serializable
 		}
 	}
 	
-	/**
-	 * @throws FileNotFoundException
-	 * @throws IOException
-	 * @throws ClassNotFoundException
-	 */
-	@SuppressWarnings(value =
-	{
-		"unchecked"
-	})
+	@SuppressWarnings("unchecked")
 	private void loadBinFiles() throws FileNotFoundException, IOException, ClassNotFoundException
 	{
 		FilenameFilter filter = new UniverseFilter("bin");
@@ -420,10 +389,6 @@ public class Universe implements java.io.Serializable
 	
 	public class UniverseDump implements Runnable
 	{
-		/*
-		 * (non-Javadoc)
-		 * @see java.lang.Runnable#run()
-		 */
 		@Override
 		public void run()
 		{
@@ -493,7 +458,6 @@ public class Universe implements java.io.Serializable
 		}
 	}
 	
-	// prepare for shutdown
 	public void implode(boolean b)
 	{
 		createMap();

@@ -19,7 +19,6 @@
 package net.sf.l2j.gameserver.serverpackets;
 
 /**
- * This class ...
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
 public class CharCreateOk extends L2GameServerPacket
@@ -33,10 +32,6 @@ public class CharCreateOk extends L2GameServerPacket
 		writeD(0x01);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

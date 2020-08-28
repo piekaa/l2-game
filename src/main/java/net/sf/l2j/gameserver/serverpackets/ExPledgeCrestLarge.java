@@ -34,10 +34,6 @@ public class ExPledgeCrestLarge extends L2GameServerPacket
 		_data = data;
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -52,14 +48,9 @@ public class ExPledgeCrestLarge extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__FE_28_EXPLEDGECRESTLARGE;
 	}
-	
 }

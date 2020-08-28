@@ -1,20 +1,20 @@
 /*
- * This program is free software; you can redistribute it and/or modify
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.model;
 
@@ -37,11 +37,8 @@ import net.sf.l2j.gameserver.serverpackets.GetItem;
  * <BR>
  * <li>L2Character</li> <li>L2ItemInstance</li> <li>L2Potion</li>
  */
-
 public abstract class L2Object
 {
-	// =========================================================
-	// Data Field
 	private boolean _isVisible; // Object visibility
 	private ObjectKnownList _knownList;
 	private String _name;
@@ -49,15 +46,11 @@ public abstract class L2Object
 	private ObjectPoly _poly;
 	private ObjectPosition _position;
 	
-	// =========================================================
-	// Constructor
 	public L2Object(int objectId)
 	{
 		_objectId = objectId;
 	}
 	
-	// =========================================================
-	// Event - Public
 	public void onAction(L2PcInstance player)
 	{
 		player.sendPacket(new ActionFailed());
@@ -76,7 +69,7 @@ public abstract class L2Object
 	/**
 	 * Do Nothing.<BR>
 	 * <BR>
-	 * <B><U> Overriden in </U> :</B><BR>
+	 * <B><U> Overridden in </U> :</B><BR>
 	 * <BR>
 	 * <li>L2GuardInstance : Set the home location of its L2GuardInstance</li> <li>L2Attackable : Reset the Spoiled flag</li><BR>
 	 * <BR>
@@ -85,7 +78,6 @@ public abstract class L2Object
 	{
 	}
 	
-	// =========================================================
 	// Position - Should remove to fully move to L2ObjectPosition
 	public final void setXYZ(int x, int y, int z)
 	{
@@ -124,8 +116,6 @@ public abstract class L2Object
 		return getPosition().getZ();
 	}
 	
-	// =========================================================
-	// Method - Public
 	/**
 	 * Remove a L2Object from the world.<BR>
 	 * <BR>
@@ -160,7 +150,7 @@ public abstract class L2Object
 			getPosition().setWorldRegion(null);
 		}
 		
-		// this can synchronize on others instancies, so it's out of
+		// this can synchronize on others instances, so it's out of
 		// synchronized, to avoid deadlocks
 		// Remove the L2Object from the world
 		L2World.getInstance().removeVisibleObject(this, reg);
@@ -224,7 +214,7 @@ public abstract class L2Object
 			}
 		}
 		
-		// this can synchronize on others instancies, so it's out of
+		// this can synchronize on others instances, so it's out of
 		// synchronized, to avoid deadlocks
 		// Remove the L2ItemInstance from the world
 		L2World.getInstance().removeVisibleObject(this, oldregion);
@@ -272,7 +262,7 @@ public abstract class L2Object
 			getPosition().getWorldRegion().addVisibleObject(this);
 		}
 		
-		// this can synchronize on others instancies, so it's out of
+		// this can synchronize on others instances, so it's out of
 		// synchronized, to avoid deadlocks
 		// Add the L2Object spawn in the world as a visible object
 		L2World.getInstance().addVisibleObject(this, getPosition().getWorldRegion(), null);
@@ -319,7 +309,7 @@ public abstract class L2Object
 			getPosition().getWorldRegion().addVisibleObject(this);
 		}
 		
-		// this can synchronize on others instancies, so it's out of
+		// this can synchronize on others instances, so it's out of
 		// synchronized, to avoid deadlocks
 		// Add the L2Object spawn in the world as a visible object
 		L2World.getInstance().addVisibleObject(this, getPosition().getWorldRegion(), null);
@@ -339,11 +329,6 @@ public abstract class L2Object
 		}
 	}
 	
-	// =========================================================
-	// Method - Private
-	
-	// =========================================================
-	// Property - Public
 	public boolean isAttackable()
 	{
 		return false;

@@ -26,7 +26,6 @@ import net.sf.l2j.gameserver.model.actor.instance.L2NpcInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PetInstance;
 
 /**
- * This class ...
  * @version $Revision: 1.7.2.4.2.9 $ $Date: 2005/04/11 10:05:54 $
  */
 public class NpcInfo extends L2GameServerPacket
@@ -49,10 +48,6 @@ public class NpcInfo extends L2GameServerPacket
 	private String _name = "";
 	private String _title = "";
 	
-	/**
-	 * @param cha
-	 * @param attacker
-	 */
 	public NpcInfo(L2NpcInstance cha, L2Character attacker)
 	{
 		_activeChar = cha;

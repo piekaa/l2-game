@@ -25,7 +25,6 @@ import net.sf.l2j.gameserver.model.L2Object;
 import net.sf.l2j.gameserver.templates.L2NpcTemplate;
 
 /**
- * This class ...
  * @version $Revision: 1.7.2.4.2.9 $ $Date: 2005/04/11 10:05:54 $
  */
 public class NpcInfoPoly extends L2GameServerPacket
@@ -50,10 +49,6 @@ public class NpcInfoPoly extends L2GameServerPacket
 	private final int _collisionRadius;
 	private final int _collisionHeight;
 	
-	/**
-	 * @param obj
-	 * @param attacker
-	 */
 	public NpcInfoPoly(L2Object obj, L2Character attacker)
 	{
 		_obj = obj;

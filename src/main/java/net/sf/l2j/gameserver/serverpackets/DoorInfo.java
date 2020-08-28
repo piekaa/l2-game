@@ -42,14 +42,9 @@ public class DoorInfo extends L2GameServerPacket
 		writeD(_door.getDoorId());
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__60_DOORINFO;
 	}
-	
 }

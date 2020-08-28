@@ -1,16 +1,20 @@
 /*
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
+ * Copyright © 2004-2020 L2J Server
  * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
+ * This file is part of L2J Server.
  * 
- * You should have received a copy of the GNU General Public License along with
- * this program. If not, see <http://www.gnu.org/licenses/>.
+ * L2J Server is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver;
 
@@ -27,24 +31,16 @@ class PacketHistory
 	
 	protected static final XMLFormat<PacketHistory> PACKET_HISTORY_XML = new XMLFormat<PacketHistory>(PacketHistory.class)
 	{
-		/**
-		 * @see javolution.xml.XMLFormat#read(javolution.xml.XMLFormat.InputElement, java.lang.Object)
-		 */
 		@Override
 		public void read(InputElement xml, PacketHistory packetHistory) throws XMLStreamException
 		{
-			// TODO Auto-generated method stub
 			packetHistory._timeStamp = xml.getAttribute("time-stamp", 0);
 			packetHistory._info = xml.<Map<Class<?>, Long>> get("info");
 		}
 		
-		/**
-		 * @see javolution.xml.XMLFormat#write(java.lang.Object, javolution.xml.XMLFormat.OutputElement)
-		 */
 		@Override
 		public void write(PacketHistory packetHistory, OutputElement xml) throws XMLStreamException
 		{
-			// TODO Auto-generated method stub
 			xml.setAttribute("time-stamp", new Date(packetHistory._timeStamp).toString());
 			
 			for (Class<?> cls : packetHistory._info.keySet())

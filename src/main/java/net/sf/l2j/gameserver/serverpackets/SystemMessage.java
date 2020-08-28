@@ -23,7 +23,6 @@ import java.util.Vector;
 import net.sf.l2j.gameserver.network.SystemMessageId;
 
 /**
- * This class ...
  * @version $Revision: 1.18.2.5.2.8 $ $Date: 2005/04/05 19:41:08 $
  */
 public class SystemMessage extends L2GameServerPacket
@@ -170,10 +169,6 @@ public class SystemMessage extends L2GameServerPacket
 		}
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

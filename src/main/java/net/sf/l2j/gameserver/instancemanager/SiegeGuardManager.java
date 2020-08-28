@@ -1,19 +1,20 @@
-/* This program is free software; you can redistribute it and/or modify
+/*
+ * Copyright © 2004-2020 L2J Server
+ * 
+ * This file is part of L2J Server.
+ * 
+ * L2J Server is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2, or (at your option)
- * any later version.
- *
- * This program is distributed in the hope that it will be useful,
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
- * 02111-1307, USA.
- *
- * http://www.gnu.org/copyleft/gpl.html
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.instancemanager;
 
@@ -35,23 +36,16 @@ public class SiegeGuardManager
 	
 	private static Logger _log = Logger.getLogger(SiegeGuardManager.class.getName());
 	
-	// =========================================================
-	// Data Field
 	private final Castle _castle;
 	private final List<L2Spawn> _siegeGuardSpawn = new FastList<>();
 	
-	// =========================================================
-	// Constructor
 	public SiegeGuardManager(Castle castle)
 	{
 		_castle = castle;
 	}
 	
-	// =========================================================
-	// Method - Public
 	/**
-	 * Add guard.<BR>
-	 * <BR>
+	 * Add guard.
 	 * @param activeChar
 	 * @param npcId
 	 */
@@ -65,8 +59,7 @@ public class SiegeGuardManager
 	}
 	
 	/**
-	 * Add guard.<BR>
-	 * <BR>
+	 * Add guard.
 	 * @param x
 	 * @param y
 	 * @param z
@@ -79,8 +72,7 @@ public class SiegeGuardManager
 	}
 	
 	/**
-	 * Hire merc.<BR>
-	 * <BR>
+	 * Hire merc.
 	 * @param activeChar
 	 * @param npcId
 	 */
@@ -94,8 +86,7 @@ public class SiegeGuardManager
 	}
 	
 	/**
-	 * Hire merc.<BR>
-	 * <BR>
+	 * Hire merc.
 	 * @param x
 	 * @param y
 	 * @param z
@@ -144,10 +135,6 @@ public class SiegeGuardManager
 		}
 	}
 	
-	/**
-	 * Remove mercs.<BR>
-	 * <BR>
-	 */
 	public void removeMercs()
 	{
 		java.sql.Connection con = null;
@@ -175,10 +162,6 @@ public class SiegeGuardManager
 		}
 	}
 	
-	/**
-	 * Spawn guards.<BR>
-	 * <BR>
-	 */
 	public void spawnSiegeGuard()
 	{
 		loadSiegeGuard();
@@ -191,10 +174,6 @@ public class SiegeGuardManager
 		}
 	}
 	
-	/**
-	 * Unspawn guards.<BR>
-	 * <BR>
-	 */
 	public void unspawnSiegeGuard()
 	{
 		for (L2Spawn spawn : getSiegeGuardSpawn())
@@ -211,12 +190,6 @@ public class SiegeGuardManager
 		getSiegeGuardSpawn().clear();
 	}
 	
-	// =========================================================
-	// Method - Private
-	/**
-	 * Load guards.<BR>
-	 * <BR>
-	 */
 	private void loadSiegeGuard()
 	{
 		java.sql.Connection con = null;
@@ -279,8 +252,7 @@ public class SiegeGuardManager
 	}
 	
 	/**
-	 * Save guards.<BR>
-	 * <BR>
+	 * Save guards.
 	 * @param x
 	 * @param y
 	 * @param z
@@ -328,9 +300,6 @@ public class SiegeGuardManager
 			}
 		}
 	}
-	
-	// =========================================================
-	// Proeprty
 	
 	public final Castle getCastle()
 	{

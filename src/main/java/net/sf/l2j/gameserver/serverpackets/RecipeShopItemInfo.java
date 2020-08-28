@@ -55,10 +55,6 @@ public class RecipeShopItemInfo extends L2GameServerPacket
 		writeD(0xffffffff);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

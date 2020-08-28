@@ -20,13 +20,13 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
 
-import com.l2jserver.mmocore.IAcceptFilter;
+import com.l2jserver.mmocore.AcceptFilter;
 
 /**
  * Formatted Forsaiken's IPv4 filter [DrHouse]
  * @author Forsaiken
  */
-public class IPv4Filter implements IAcceptFilter, Runnable
+public class IPv4Filter implements AcceptFilter, Runnable
 {
 	private final HashMap<Integer, Flood> _ipFloodMap;
 	private static final long SLEEP_TIME = 5000;

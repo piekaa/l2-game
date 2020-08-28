@@ -22,7 +22,6 @@ import net.sf.l2j.gameserver.model.L2ItemInstance;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 /**
- * This class ...
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
 public class TradeStart extends L2GameServerPacket
@@ -39,7 +38,8 @@ public class TradeStart extends L2GameServerPacket
 	
 	@Override
 	protected final void writeImpl()
-	{// 0x2e TradeStart d h (h dddhh dhhh)
+	{
+		// 0x2e TradeStart d h (h dddhh dhhh)
 		if ((_activeChar.getActiveTradeList() == null) || (_activeChar.getActiveTradeList().getPartner() == null))
 		{
 			return;
@@ -66,10 +66,6 @@ public class TradeStart extends L2GameServerPacket
 		}
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

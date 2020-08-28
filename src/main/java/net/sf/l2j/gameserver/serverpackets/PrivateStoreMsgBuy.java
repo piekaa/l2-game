@@ -21,7 +21,6 @@ package net.sf.l2j.gameserver.serverpackets;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 /**
- * This class ...
  * @version $Revision: 1.2.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
 public class PrivateStoreMsgBuy extends L2GameServerPacket
@@ -47,14 +46,9 @@ public class PrivateStoreMsgBuy extends L2GameServerPacket
 		writeS(_storeMsg);
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__D2_PRIVATESTOREMSGBUY;
 	}
-	
 }

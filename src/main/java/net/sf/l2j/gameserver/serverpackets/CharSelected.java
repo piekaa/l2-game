@@ -22,7 +22,6 @@ import net.sf.l2j.gameserver.GameTimeController;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 /**
- * This class ...
  * @version $Revision: 1.4.2.5.2.6 $ $Date: 2005/03/27 15:29:39 $
  */
 public class CharSelected extends L2GameServerPacket
@@ -32,10 +31,6 @@ public class CharSelected extends L2GameServerPacket
 	private final L2PcInstance _activeChar;
 	private final int _sessionId;
 	
-	/**
-	 * @param cha
-	 * @param sessionId
-	 */
 	public CharSelected(L2PcInstance cha, int sessionId)
 	{
 		_activeChar = cha;

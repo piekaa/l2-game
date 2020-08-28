@@ -49,10 +49,6 @@ public class ExStorageMaxCount extends L2GameServerPacket
 		_recipe = _activeChar.GetCommonRecipeLimit();
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.serverpackets.ServerBasePacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -69,14 +65,9 @@ public class ExStorageMaxCount extends L2GameServerPacket
 		
 	}
 	
-	/*
-	 * (non-Javadoc)
-	 * @see net.sf.l2j.gameserver.BasePacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
 		return _S__FE_2E_EXSTORAGEMAXCOUNT;
 	}
-	
 }

@@ -21,7 +21,6 @@ package net.sf.l2j.gameserver.serverpackets;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
 
 /**
- * This class ...
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  * @author godson
  */
@@ -30,9 +29,6 @@ public class ExOlympiadUserInfo extends L2GameServerPacket
 	// chcdSddddd
 	private static final String _S__FE_29_OLYMPIADUSERINFO = "[S] FE:2C OlympiadUserInfo";
 	
-	/**
-	 * @param player
-	 */
 	public ExOlympiadUserInfo(L2PcInstance player)
 	{
 	}

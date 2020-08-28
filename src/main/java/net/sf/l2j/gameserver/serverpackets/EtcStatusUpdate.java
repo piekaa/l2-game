@@ -39,9 +39,6 @@ public class EtcStatusUpdate extends L2GameServerPacket
 		_effect = (EffectCharge) _activeChar.getFirstEffect(L2Effect.EffectType.CHARGE);
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -62,9 +59,6 @@ public class EtcStatusUpdate extends L2GameServerPacket
 		writeD(_activeChar.getDeathPenaltyBuffLevel()); // 1-15 death penalty, lvl (combat ability decreased due to death)
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#getType()
-	 */
 	@Override
 	public String getType()
 	{

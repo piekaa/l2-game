@@ -25,10 +25,8 @@ import net.sf.l2j.gameserver.serverpackets.L2GameServerPacket;
 import net.sf.l2j.gameserver.serverpackets.RelationChanged;
 
 /**
- * This class ...
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
  */
-
 public final class Broadcast
 {
 	private static Logger _log = Logger.getLogger(Broadcast.class.getName());

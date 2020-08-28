@@ -35,9 +35,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 	private final Lock _r = _rwl.readLock();
 	private final Lock _w = _rwl.writeLock();
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#size()
-	 */
 	@Override
 	public int size()
 	{
@@ -52,9 +49,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#isEmpty()
-	 */
 	@Override
 	public boolean isEmpty()
 	{
@@ -69,9 +63,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#clear()
-	 */
 	@Override
 	public void clear()
 	{
@@ -86,9 +77,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see L2ObjectMap#put(L2Object)
-	 */
 	@Override
 	public void put(T obj)
 	{
@@ -106,9 +94,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#remove(L2Object)
-	 */
 	@Override
 	public void remove(T obj)
 	{
@@ -126,9 +111,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#get(int)
-	 */
 	@Override
 	public T get(int id)
 	{
@@ -143,9 +125,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#contains(L2Object)
-	 */
 	@Override
 	public boolean contains(T obj)
 	{
@@ -164,9 +143,6 @@ public class WorldObjectTree<T extends L2Object> extends L2ObjectMap<T>
 		}
 	}
 	
-	/**
-	 * @see net.sf.l2j.util.L2ObjectMap#iterator()
-	 */
 	@Override
 	public Iterator<T> iterator()
 	{

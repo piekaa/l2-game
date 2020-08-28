@@ -29,9 +29,6 @@ public class ExShowQuestMark extends L2GameServerPacket
 		_questId = questId;
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#getType()
-	 */
 	@Override
 	public String getType()
 	{
@@ -39,9 +36,6 @@ public class ExShowQuestMark extends L2GameServerPacket
 		return null;
 	}
 	
-	/**
-	 * @see net.sf.l2j.gameserver.serverpackets.L2GameServerPacket#writeImpl()
-	 */
 	@Override
 	protected void writeImpl()
 	{
@@ -50,5 +44,4 @@ public class ExShowQuestMark extends L2GameServerPacket
 		writeH(0x1a);
 		writeD(_questId);
 	}
-	
 }

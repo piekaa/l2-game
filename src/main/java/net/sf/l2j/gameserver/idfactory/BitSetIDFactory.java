@@ -1,16 +1,20 @@
 /*
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU General Public License as published by the Free Software
- * Foundation, either version 3 of the License, or (at your option) any later
- * version.
+ * Copyright © 2004-2020 L2J Server
  * 
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
+ * This file is part of L2J Server.
  * 
- * You should have received a copy of the GNU General Public License along with
- * this program. If not, see <http://www.gnu.org/licenses/>.
+ * L2J Server is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * L2J Server is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package net.sf.l2j.gameserver.idfactory;
 
@@ -22,7 +26,6 @@ import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.util.PrimeFinder;
 
 /**
- * This class ..
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
  */
 public class BitSetIDFactory extends IdFactory
@@ -35,11 +38,6 @@ public class BitSetIDFactory extends IdFactory
 	
 	public class BitSetCapacityCheck implements Runnable
 	{
-		
-		/*
-		 * (non-Javadoc)
-		 * @see java.lang.Runnable#run()
-		 */
 		@Override
 		public void run()
 		{
@@ -48,7 +46,6 @@ public class BitSetIDFactory extends IdFactory
 				increaseBitSetCapacity();
 			}
 		}
-		
 	}
 	
 	protected BitSetIDFactory()
