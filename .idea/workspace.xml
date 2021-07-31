@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a9cda88-180e-467e-b3d9-af4f25bf6175" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/config/GMAccess.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/altsettings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/clanhall.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/command-privileges.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/extensions.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/hexid.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/idfactory.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/l2jmods.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/log.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/olympiad.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/options.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/other.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/pvp.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/rates.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/server.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/sevensigns.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/siege.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/telnet.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/group_template/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/group_template/chests$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/group_template/feedable_beasts$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/group_template/polymorphing_angel$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/individual/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/individual/antharas$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/individual/baium$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/ai/individual/core$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/3995_echo/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/4000_ShadowWeapons/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/6050_KetraOrcSupport/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/6051_VarkaSilenosSupport/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/7000_HeroItems/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/8000_RaidbossInfo/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/custom/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/100_SagaOfTheMaestro/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/101_SwordOfSolidarity/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/102_FungusFever/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/103_SpiritOfCraftsman/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/104_SpiritOfMirrors/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/105_SkirmishWithOrcs/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/106_ForgottenTruth/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/107_MercilessPunishment/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/108_JumbleTumbleDiamondFuss/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/10_IntoTheWorld/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/110_ToThePrimevalIsle/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/117_OceanOfDistantStar/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/118_ToLeadAndBeLed/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/11_SecretMeetingWithKetraOrcs/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/121_PavelTheGiants/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/122_OminousNews/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/123_TheLeaderAndTheFollower/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/124_MeetingTheElroki/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/127_KamaelAWindowToTheFuture/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/12_SecretMeetingWithVarkaSilenos/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/13_ParcelDelivery/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/14_WhereaboutsOfTheArchaeologist/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/151_SaveMySister1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/152_ShardsOfGolem/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/153_WharfOldtimersFavor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/154_SacrificeToSea/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/155_FindSirWindawood/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/156_MillenniumLove/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/157_RecoverSmuggled/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/158_SeedOfEvil/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/159_ProtectHeadsprings/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/15_SweetWhisper/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/160_NerupasFavor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/161_FruitsOfMothertree/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/162_CurseOfFortress/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/163_LegacyOfPoet/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/164_BloodFiend/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/165_WildHunt/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/166_DarkMass/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/167_DwarvenKinship/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/168_DeliverSupplies/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/169_NightmareChildren/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/16_TheComingDarkness/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/170_DangerousAllure/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/171_ActsOfEvil/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/17_LightAndDarkness/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/18_MeetingWithTheGoldenRam/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/19_GoToThePastureland/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/1_LettersOfLove1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/20_BringUpWithLove/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/211_TrialOfChallenger/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/212_TrialOfDuty/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/213_TrialOfSeeker/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/214_TrialOfScholar/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/215_TrialOfPilgrim/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/216_TrialOfGuildsman/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/217_TestimonyOfTrust/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/218_TestimonyOfLife/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/219_TestimonyOfFate/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/21_HiddenTruth/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/220_TestimonyOfGlory/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/221_TestimonyOfProsperity/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/222_TestOfDuelist/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/223_TestOfChampion/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/224_TestOfSagittarius/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/225_TestOfSearcher/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/226_TestOfHealer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/227_TestOfReformer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/228_TestOfMagus/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/229_TestOfWitchcraft/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/22_TragedyInVonHellmannForest/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/230_TestOfSummoner/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/231_TestOfMaestro/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/232_TestOfLord/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/233_TestOfWarspirit/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/234_FatesWhisper/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/235_MimirsElixir/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/241_PossessorOfAPreciousSoul_1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/242_PossessorOfAPreciousSoul_2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/246_PossessorOfAPreciousSoul_3/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/247_PossessorOfAPreciousSoul_4/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/257_GuardIsBusy1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/258_BringWolfPelt1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/259_RanchersPlea/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/260_HuntForOrcs1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/261_DreamOfMoneylender1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/262_BringMeMushrooms1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/263_KillAllSylphs1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/264_KeenClaws/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/265_ChainsOfSlavery/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/266_PleaOfPixies/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/267_WrathOfVerdure/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/271_ProofOfValor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/272_WrathOfAncestors/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/273_InvadersOfHolyland/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/274_AgainstWolfMen/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/275_BlackWingedSpies/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/276_HestuiTotem/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/277_GatekeepersOffering/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/27_ChestCaughtWithABaitOfWind/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/28_ChestCaughtWithABaitOfIcyAir/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/291_RedBonnetsRevenge/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/292_CrushBrigands/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/293_HiddenVein/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/294_CovertBusiness/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/295_DreamsOfFlight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/296_SilkOfTarantula/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/297_GatekeepersFavor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/298_LizardmensConspiracy/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/299_GatherIngredientsForPie/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/29_ChestCaughtWithABaitOfEarth/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/2_WhatWomenWant1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/300_HuntingLetoLizardman/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/303_CollectArrowheads/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/306_CrystalOfFireice/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/30_ChestCaughtWithABaitOfFire/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/313_CollectSpores/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/316_DestroyPlaguebringers/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/317_CatchTheWind/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/319_ScentOfDeath/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/31_SecretBuriedInTheSwamp/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/320_BonesTellFuture/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/324_SweetestVenom/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/325_GrimCollector/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/326_VanquishRemnants/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/327_ReclaimTheLand/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/328_SenseForBusiness/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/329_CuriosityOfDwarf/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/32_AnObviousLie/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/330_AdeptOfTaste/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/331_ArrowForVengeance/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/333_BlackLionHunt/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/334_TheWishingPotion/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/336_CoinOfMagic/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/338_AlligatorHunter/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/33_MakeAPairOfDressShoes/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/340_SubjugationOfLizardmen/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/341_HuntingForWildBeasts/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/343_UnderTheShadowOfTheIvoryTower/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/344_1000YearsEndofLamentation/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/345_MethodToRaiseTheDead/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/347_GoGetTheCalculator/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/348_ArrogantSearch/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/34_InSearchOfClothes/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/350_EnhanceYourWeapon/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/351_BlackSwan/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/352_HelpRoodRaiseANewPet/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/353_PowerOfDarkness/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/354_ConquestOfAlligatorIsland/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/355_FamilyHonor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/356_DigUpTheSeaOfSpores/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/357_WarehouseKeepersAmbition/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/358_IllegitimateChildOfAGoddess/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/359_ForSleeplessDeadmen/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/35_FindGlitteringJewelry/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/360_PlunderTheirSupplies/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/362_BardsMandolin/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/363_SorrowfulSoundofFlute/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/364_JovialAccordion/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/365_DevilsLegacy/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/366_SilverHairedShaman/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/367_ElectrifyingRecharge/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/368_TrespassingIntoTheSacredArea/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/369_CollectorOfJewels/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/36_MakeASewingKit/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/370_AWisemanSowsSeeds/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/371_ShriekOfGhosts/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/372_LegacyOfInsolence/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/373_SupplierOfReagents/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/374_WhisperOfDreams1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/375_WhisperOfDreams2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/376_GiantsExploration1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/377_GiantsExploration2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/378_MagnificentFeast/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/379_FantasyWine/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/37_PleaseMakeMeFormalWear/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/380_BringOutTheFlavorOfIngredients/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/381_LetsBecomeARoyalMember/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/382_KailsMagicCoin/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/383_SearchingForTreasure/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/385_YokeofthePast/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/386_StolenDignity/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/38_DragonFangs/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/39_RedEyedInvaders/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/3_ReleaseDarkelfElder1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/401_PathToWarrior/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/402_PathToKnight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/403_PathToRogue/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/404_PathToWizard/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/405_PathToCleric/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/406_PathToElvenKnight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/407_PathToElvenScout/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/408_PathToElvenwizard/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/409_PathToOracle/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/410_PathToPalusKnight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/411_PathToAssassin/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/412_PathToDarkwizard/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/413_PathToShillienOracle/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/414_PathToOrcRaider/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/415_PathToOrcMonk/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/416_PathToOrcShaman/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/417_PathToScavenger/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/418_PathToArtisan/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/419_GetAPet/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/420_LittleWings/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/421_LittleWingAdventures/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/422_RepentYourSins/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/426_FishingShot/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/42_HelpTheUncle/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/431_WeddingMarch/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/432_BirthdayPartySong/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/43_HelpTheSister/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/44_HelpTheSon/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/45_ToTalkingIsland/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/46_OnceMoreInTheArmsOfTheMotherTree/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/47_IntoTheDarkForest/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/48_ToTheImmortalPlateau/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/49_TheRoadHome/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/4_LongLiveLordOfFlame/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/501_ProofOfClanAlliance/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/503_PursuitClanAmbition/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/508_TheClansReputation/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/50_LanoscosSpecialBait/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/51_OFullesSpecialBait/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/52_WilliesSpecialBait/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/53_LinnaeusSpecialBait/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/5_MinersFavor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/601_WatchingEyes/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/602_ShadowOfLight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/605_AllianceWithKetraOrcs/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/606_WarWithVarkaSilenos/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/607_ProveYourCourage_Ketra/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/608_SlayTheEnemyCommander_Ketra/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/609_MagicalPowerOfWaterPart1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/610_MagicalPowerOfWaterPart2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/611_AllianceWithVarkaSilenos/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/612_WarWithKetraOrcs/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/613_ProveYourCourage_Varka/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/614_SlayTheEnemyCommander_Varka/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/615_MagicalPowerOfFirePart1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/616_MagicalPowerOfFirePart2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/617_GatherTheFlames/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/618_IntoTheFlame/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/619_RelicsOfTheOldEmpire/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/621_EggDelivery/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/622_DeliveryOfSpecialLiquor/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/623_TheFinestFood/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/624_TheFinestIngredientsPart1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/626_ADarkTwilight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/627_HeartInSearchOfPower/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/628_HuntGoldenRam/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/629_CleanUpTheSwampOfScreams/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/631_DeliciousTopChoiceMeat/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/632_NecromancersRequest/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/633_InTheForgottenVillage/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/634_InSearchofDimensionalFragments/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/635_InTheDimensionalRift/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/636_TruthBeyond/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/637_ThroughOnceMore/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/644_GraveRobberAnnihilation/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/645_GhostsOfBatur/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/647_InfluxOfMachines/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/649_ALooterAndARailroadMan/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/650_ABrokenDream/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/651_RunawayYouth/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/652_AnAgedExAdventurer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/653_WildMaiden/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/659_IdRatherBeCollectingFairyBreath/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/660_AidingtheFloranVillage/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/6_StepIntoTheFuture/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/70_SagaOfThePhoenixKnight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/71_SagaOfEvasTemplar/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/72_SagaOfTheSwordMuse/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/73_SagaOfTheDuelist/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/74_SagaOfTheDreadnoughts/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/75_SagaOfTheTitan/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/76_SagaOfTheGrandKhavatari/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/77_SagaOfTheDominator/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/78_SagaOfTheDoomcryer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/79_SagaOfTheAdventurer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/7_ATripBegins/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/80_SagaOfTheWindRider/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/81_SagaOfTheGhostHunter/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/82_SagaOfTheSagittarius/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/83_SagaOfTheMoonlightSentinel/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/84_SagaOfTheGhostSentinel/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/85_SagaOfTheCardinal/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/86_SagaOfTheHierophant/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/87_SagaOfEvasSaint/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/88_SagaOfTheArchmage/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/89_SagaOfTheMysticMuse/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/8_AnAdventureBegins/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/90_SagaOfTheStormScreamer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/91_SagaOfTheArcanaLord/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/92_SagaOfTheElementalMaster/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/93_SagaOfTheSpectralMaster/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/94_SagaOfTheSoultaker/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/95_SagaOfTheHellKnight/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/96_SagaOfTheSpectralDancer/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/97_SagaOfTheShillienTemplar/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/98_SagaOfTheShillienSaint/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/999_C3Tutorial/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/99_SagaOfTheFortuneSeeker/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/9_IntoTheCityOfHumans/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/SagasSuperclass/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/quests/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1100_teleport_with_charm/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1101_teleport_to_race_track/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1102_toivortex_blue/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1102_toivortex_green/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1102_toivortex_red/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1103_OracleTeleport/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1104_NewbieTravelToken/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/1630_PaganTeleporters/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/2000_NoblesseTeleport/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/2211_HuntingGroundsTeleport/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/2400_toivortex_exit/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/6111_ElrokiTeleporters/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/teleports/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30026_bitz_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30031_biotin_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30109_hannavalt_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30154_asterios_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30358_thifiell_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30520_reed_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30525_bronk_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/30565_kakai_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/9000_clan/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/9001_alliance/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/dark_elven_change_1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/dark_elven_change_2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/dwarven_occupation_change/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/elven_human_buffers_2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/elven_human_fighters_1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/elven_human_mystics_1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/elven_human_mystics_2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/orc_occupation_change_1/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/jscript/village_master/orc_occupation_change_2/__init__$py.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fixDrop.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/clientpackets/Say2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/clientpackets/Say2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/L2DropData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/L2DropData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/quest/QuestState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/quest/QuestState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/templates/L2NpcTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/templates/L2NpcTemplate.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C4" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1vnOhM3FA9L7455yomw4RsvBaKC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Piotr\IdeaProjects\l2j-server-game" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Piotr\IdeaProjects\l2j-server-game\config" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.GameServer">
+    <configuration name="GameServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.sf.l2j.gameserver.GameServer" />
+      <module name="l2j-server-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.sf.l2j.gameserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameServerRegister" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.sf.l2j.gsregistering.GameServerRegister" />
+      <module name="l2j-server-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.sf.l2j.gsregistering.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.sf.l2j.loginserver.LoginServer" />
+      <module name="l2j-server-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.sf.l2j.loginserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQLAccountManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="net.sf.l2j.accountmanager.SQLAccountManager" />
+      <module name="l2j-server-game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.sf.l2j.accountmanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GameServer" />
+        <item itemvalue="Application.SQLAccountManager" />
+        <item itemvalue="Application.LoginServer" />
+        <item itemvalue="Application.GameServerRegister" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a9cda88-180e-467e-b3d9-af4f25bf6175" name="Default Changelist" comment="" />
+      <created>1627194505853</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627194505853</updated>
+      <workItem from="1627194507690" duration="1464000" />
+      <workItem from="1627196852428" duration="2838000" />
+      <workItem from="1627393276706" duration="2258000" />
+      <workItem from="1627407725976" duration="3245000" />
+      <workItem from="1627411841954" duration="2848000" />
+      <workItem from="1627470439669" duration="17394000" />
+      <workItem from="1627570376624" duration="1148000" />
+      <workItem from="1627628013596" duration="8230000" />
+      <workItem from="1627728516404" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/sf/l2j/gameserver/model/quest/QuestState.java</url>
+          <line>568</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
