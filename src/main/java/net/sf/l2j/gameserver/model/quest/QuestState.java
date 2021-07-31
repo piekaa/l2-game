@@ -563,6 +563,9 @@ public final class QuestState
 	public boolean dropQuestItems(int itemId, int minCount, int maxCount, int neededCount, int dropChance, boolean sound)
 	{
 		dropChance *= Config.RATE_DROP_QUEST / ((getPlayer().getParty() != null) ? getPlayer().getParty().getMemberCount() : 1);
+
+		System.out.println(dropChance);
+
 		int currentCount = getQuestItemsCount(itemId);
 		
 		if ((neededCount > 0) && (currentCount >= neededCount))

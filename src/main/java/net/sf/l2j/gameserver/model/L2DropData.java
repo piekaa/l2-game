@@ -189,4 +189,8 @@ public class L2DropData
 		}
 		return false;
 	}
+
+	public boolean isAdena() {
+		return _itemId == 57;
+	}
 }

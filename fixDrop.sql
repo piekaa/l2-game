@@ -1,0 +1,1 @@
+update droplist set category = itemId + 10000 * droplist.category where category = 1 or category = 2;
