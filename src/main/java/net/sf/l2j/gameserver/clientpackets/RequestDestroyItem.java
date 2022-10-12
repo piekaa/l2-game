@@ -86,6 +86,30 @@ public final class RequestDestroyItem extends L2GameClientPacket
 		{
 			return;
 		}
+
+
+		int crystalId = itemToRemove.getItem().getCrystalItemId();
+		int crystalAmount = itemToRemove.getCrystalCount();
+		L2ItemInstance createdCrystals = activeChar.getInventory().addItem("Crystalize", crystalId, crystalAmount, activeChar, itemToRemove);
+
+		SystemMessage sm = new SystemMessage(SystemMessageId.EARNED_S2_S1_S);
+		sm.addItemName(crystalId);
+		sm.addNumber(crystalAmount);
+		activeChar.sendPacket(sm);
+
+
+		// a na co to?
+		activeChar.sendPacket(new ItemList(activeChar, false));
+
+		// i to?
+		// status & user info
+		StatusUpdate su = new StatusUpdate(activeChar.getObjectId());
+		su.addAttribute(StatusUpdate.CUR_LOAD, activeChar.getCurrentLoad());
+		activeChar.sendPacket(su);
+
+		activeChar.broadcastUserInfo();
+
+
 		
 		// Cannot discard item that the skill is consumming
 		if (activeChar.isCastingNow())
@@ -189,7 +213,7 @@ public final class RequestDestroyItem extends L2GameClientPacket
 			sendPacket(new ItemList(activeChar, true));
 		}
 		
-		StatusUpdate su = new StatusUpdate(activeChar.getObjectId());
+		su = new StatusUpdate(activeChar.getObjectId());
 		su.addAttribute(StatusUpdate.CUR_LOAD, activeChar.getCurrentLoad());
 		activeChar.sendPacket(su);
 		

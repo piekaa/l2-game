@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="l2j-server-game" target="11" />
+      <module name="l2j-server-game" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1029,7 +1029,7 @@ public final class Formulas
 			// Calculate Movement bonus
 			if (player.isSitting())
 			{
-				hpRegenMultiplier *= 1.5; // Sitting
+				hpRegenMultiplier *= 10; // Sitting
 			}
 			else if (!player.isMoving())
 			{
@@ -1102,7 +1102,7 @@ public final class Formulas
 			// Calculate Movement bonus
 			if (player.isSitting())
 			{
-				mpRegenMultiplier *= 1.5; // Sitting
+				mpRegenMultiplier *= 10; // Sitting
 			}
 			else if (!player.isMoving())
 			{
