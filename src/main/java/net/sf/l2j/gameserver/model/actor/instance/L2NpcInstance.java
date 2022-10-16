@@ -22,6 +22,7 @@ import static net.sf.l2j.gameserver.ai.CtrlIntention.AI_INTENTION_ACTIVE;
 
 import java.text.DateFormat;
 import java.util.List;
+import java.util.Optional;
 
 import javolution.util.FastList;
 import net.sf.l2j.Config;
@@ -31,6 +32,7 @@ import net.sf.l2j.gameserver.SevenSignsFestival;
 import net.sf.l2j.gameserver.ThreadPoolManager;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.cache.HtmCache;
+import net.sf.l2j.gameserver.customnpc.CustomNpc;
 import net.sf.l2j.gameserver.datatables.ClanTable;
 import net.sf.l2j.gameserver.datatables.HelperBuffTable;
 import net.sf.l2j.gameserver.datatables.ItemTable;
@@ -2325,6 +2327,16 @@ public class L2NpcInstance extends L2Character
 				{
 					return;
 				}
+
+				Optional<CustomNpc> customNpcOptional = CustomNpc.customNpcById(npcId);
+				if(customNpcOptional.isPresent()) {
+					NpcHtmlMessage html = new NpcHtmlMessage(getObjectId());
+					html.setHtml(customNpcOptional.get().initialHtml(getObjectId()));
+					player.sendPacket(html);
+					player.sendPacket(new ActionFailed());
+					return;
+				}
+
 				// Get the text of the selected HTML file in function of the npcId and of the page number
 				filename = (getHtmlPath(npcId, val));
 				break;

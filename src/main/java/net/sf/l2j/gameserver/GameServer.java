@@ -37,6 +37,8 @@ import net.sf.l2j.L2DatabaseFactory;
 import net.sf.l2j.gameserver.cache.CrestCache;
 import net.sf.l2j.gameserver.cache.HtmCache;
 import net.sf.l2j.gameserver.communitybbs.Manager.ForumsBBSManager;
+import net.sf.l2j.gameserver.customnpc.CustomNpc;
+import net.sf.l2j.gameserver.customnpc.CustomNpcList;
 import net.sf.l2j.gameserver.datatables.ArmorSetsTable;
 import net.sf.l2j.gameserver.datatables.AugmentationData;
 import net.sf.l2j.gameserver.datatables.CharNameTable;
@@ -287,7 +289,7 @@ public class GameServer
 	{
 		gameServer = this;
 		_log.finest("Used memory:" + getUsedMemoryMB() + "MB");
-		
+
 		_idFactory = IdFactory.getInstance();
 		if (!_idFactory.isInitialized())
 		{
@@ -345,6 +347,8 @@ public class GameServer
 		CrestCache.getInstance();
 		ClanTable.getInstance();
 		_npcTable = NpcTable.getInstance();
+		CustomNpcList.createCustomNPCs();
+		CustomNpc.getCustomNPCs().forEach(npc -> _npcTable.adNpc(npc.getId(), npc.getTemplate()));
 		
 		if (!_npcTable.isInitialized())
 		{

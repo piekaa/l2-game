@@ -24,6 +24,7 @@ import java.util.logging.Logger;
 import net.sf.l2j.Config;
 import net.sf.l2j.gameserver.ai.CtrlIntention;
 import net.sf.l2j.gameserver.communitybbs.CommunityBoard;
+import net.sf.l2j.gameserver.customnpc.CustomNpc;
 import net.sf.l2j.gameserver.handler.AdminCommandHandler;
 import net.sf.l2j.gameserver.handler.IAdminCommandHandler;
 import net.sf.l2j.gameserver.model.L2CharPosition;
@@ -64,6 +65,16 @@ public final class RequestBypassToServer extends L2GameClientPacket
 		
 		try
 		{
+			if (_command.startsWith("custom_npc_")) {
+				String[] commandParts = _command.split("_");
+				int customNpcId = Integer.parseInt(commandParts[2]);
+				int actionId = Integer.parseInt(commandParts[3]);
+				L2Object npcInstance = L2World.getInstance().findObject(Integer.parseInt(commandParts[4]));
+				CustomNpc.doAction(customNpcId, actionId, (L2NpcInstance) npcInstance, activeChar);
+				activeChar.sendPacket(new ActionFailed());
+				return;
+			}
+
 			if (_command.startsWith("admin_")) // && activeChar.getAccessLevel() >= Config.GM_ACCESSLEVEL)
 			{
 				if (Config.ALT_PRIVILEGES_ADMIN && !AdminCommandHandler.getInstance().checkPrivileges(activeChar, _command))

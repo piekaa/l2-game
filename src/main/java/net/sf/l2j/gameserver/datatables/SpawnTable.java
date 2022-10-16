@@ -26,6 +26,8 @@ import java.util.logging.Logger;
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
+import net.sf.l2j.gameserver.customnpc.CustomNpc;
+import net.sf.l2j.gameserver.customnpc.Spawn;
 import net.sf.l2j.gameserver.instancemanager.DayNightSpawnManager;
 import net.sf.l2j.gameserver.model.L2Spawn;
 import net.sf.l2j.gameserver.model.actor.instance.L2PcInstance;
@@ -152,7 +154,33 @@ public class SpawnTable
 			{
 			}
 		}
-		
+
+		CustomNpc.getCustomNPCs().forEach(npc -> {
+			for (Spawn spawnInfo : npc.getSpawns()) {
+				try {
+					L2Spawn spawn = new L2Spawn(npc.getTemplate());
+					spawn.setId(spawnInfo.getId());
+					spawn.setAmount(1);
+					spawn.setLocx(spawnInfo.getX());
+					spawn.setLocy(spawnInfo.getY());
+					spawn.setLocz(spawnInfo.getZ());
+
+					spawn.setRespawnDelay(60);
+
+					spawn.init();
+
+					_spawntable.put(spawn.getId(), spawn);
+					_npcSpawnCount++;
+					if (spawn.getId() > _highestId)
+					{
+						_highestId = spawn.getId();
+					}
+				} catch (ClassNotFoundException | NoSuchMethodException e) {
+					throw new RuntimeException(e);
+				}
+			}
+		});
+
 		_log.config("SpawnTable: Loaded " + _spawntable.size() + " Npc Spawn Locations.");
 		
 		if (Config.DEBUG)

@@ -31,6 +31,8 @@ import javolution.util.FastList;
 import javolution.util.FastMap;
 import net.sf.l2j.Config;
 import net.sf.l2j.L2DatabaseFactory;
+import net.sf.l2j.gameserver.customnpc.CustomNpc;
+import net.sf.l2j.gameserver.customnpc.CustomNpcList;
 import net.sf.l2j.gameserver.model.L2DropCategory;
 import net.sf.l2j.gameserver.model.L2DropData;
 import net.sf.l2j.gameserver.model.L2MinionData;
@@ -372,8 +374,11 @@ public class NpcTable
 			
 			_npcs.put(id, template);
 		}
-		
 		_log.config("NpcTable: Loaded " + _npcs.size() + " Npc Templates.");
+	}
+
+	public void adNpc(int id, L2NpcTemplate template) {
+		_npcs.put(id, template);
 	}
 	
 	public void reloadNpc(int id)
